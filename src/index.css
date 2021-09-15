@@ -49,5 +49,14 @@ main {
   border-radius: 35px;
   margin-top: -25px;
 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.22);
+
+  color: #31313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.searchBox .searchBar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
 }
