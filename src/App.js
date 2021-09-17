@@ -75,6 +75,8 @@ function App() {
               <div className="date">{dateBuilder(new Date())}</div>
               <div className="weatherBox">
                 <div className="temp">{Math.round(weather.main.temp)}°f</div>
+                <br />
+                <div className="feelsLike">Feels like {weather.main.feels_like}</div>
                 <div className="weather">{weather.weather[0].main}</div>
               </div>
             </div>
