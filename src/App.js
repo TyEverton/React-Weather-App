@@ -11,7 +11,7 @@ function App() {
 
   const search = (event) => {
     if (event.key === 'Enter') {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
         .then((res) => res.json())
         .then((result) => {
           setWeather(result)
@@ -74,7 +74,7 @@ function App() {
               </div>
               <div className="date">{dateBuilder(new Date())}</div>
               <div className="weatherBox">
-                <div className="temp">{Math.round(weather.main.temp) * 9/5 + 32}°f</div>
+                <div className="temp">{Math.round(weather.main.temp)}°f</div>
                 <div className="weather">{weather.weather[0].main}</div>
               </div>
             </div>
