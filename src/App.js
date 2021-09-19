@@ -54,33 +54,35 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className='app'>
       <main>
-        <div className="searchBox">
+        <div className='searchBox'>
           <input
-            type="text"
-            className="searchBar"
-            placeholder="Search..."
+            type='text'
+            className='searchBar'
+            placeholder='Search...'
             onChange={(event) => setQuery(event.target.value)}
             value={query}
             onKeyPress={search}
           />
         </div>
         {typeof weather.main != 'undefined' ? (
-          <div>
-            <div className="locationBox">
-              <div className="location">
-                {weather.name}
-              </div>
-              <div className="date">{dateBuilder(new Date())}</div>
-              <div className="weatherBox">
-                <div className="temp">{Math.round(weather.main.temp)}°f</div>
-                <br />
-                <div className="feelsLike">
-                  Feels like {weather.main.feels_like}
+          <div className='results'>
+            <div className='locationBox'>
+              <div>
+                <div className='location'>{weather.name}</div>
+                <div className='date'>{dateBuilder(new Date())}</div>
+                <div className='weatherBox'>
+                  <div className='temp'>{Math.round(weather.main.temp)}°f</div>
+                  <br />
+                  <div className='feelsLike'>
+                    Feels like {weather.main.feels_like}
+                  </div>
+                  <div className='tempMax'>
+                    Highest of the day {weather.main.temp_max}
+                  </div>
+                  <div className='weather'>{weather.weather[0].main}</div>
                 </div>
-                <div className="tempMax">Highest of the day {weather.main.temp_max}</div>
-                <div className="weather">{weather.weather[0].main}</div>
               </div>
             </div>
           </div>
