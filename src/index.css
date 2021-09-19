@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Montserrat';
-  background-color: rgb(9, 1, 44);
+  background-color: rgb(62, 191, 214);
 }
 
 .app {
@@ -64,11 +64,11 @@ main {
 }
 
 .results {
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
   border-width: thin;
-  border-radius: 10%;
-  background-color: black;
+  border-radius: 10%; */
+  /* background-color: rgb(153, 153, 153); */
 
   width: 30%;
   padding: 3%;
