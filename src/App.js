@@ -90,7 +90,7 @@ function App() {
                   <div className="tempMin">
                     L: {weather.main.temp_min.toFixed(0)}°
                   </div>
-                  <img />
+            
                 </div>
               </div>
             </div>
