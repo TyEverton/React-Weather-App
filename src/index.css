@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Montserrat';
-  background-color: rgb(94, 94, 94);
+  background-color: rgb(9, 1, 44);
 }
 
 .app {
@@ -14,7 +14,6 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
-  
 }
 
 .app.warm {
@@ -86,7 +85,7 @@ main {
 }
 
 .locationBox .date {
- color: white;
+  color: white;
   font-size: 1.8em;
   font-weight: 300;
   font-style: italic;
@@ -104,7 +103,7 @@ main {
   border-radius: 16px;
 
   padding: 15px 25px;
- color: white;
+  color: white;
   font-size: 102px;
   font-weight: 900;
 
@@ -112,23 +111,21 @@ main {
 }
 
 .weatherBox .weather {
- color: white;
+  color: white;
   font-size: 48px;
   font-weight: 700;
 }
 
 .feelsLike {
- color: white;
+  color: white;
   font-size: 2.5em;
   font-weight: 300;
-
   text-align: center;
 }
 
 .tempMax {
- color: white;
-  font-size: 2.5em;
+  color: white;
+  font-size: 2.3em;
   font-weight: 300;
-
   text-align: center;
 }
