@@ -1,3 +1,8 @@
+.header {
+  text-align: center;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,16 +69,7 @@ main {
 }
 
 .results {
-  /* border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 10%; */
-  /* background-color: rgb(153, 153, 153); */
-
-  width: 30%;
-  padding: 3%;
   margin: auto;
-  margin-top: 3%;
 }
 
 .locationBox .location {
@@ -101,12 +97,10 @@ main {
   display: inline-block;
   margin: 30px auto;
   border-radius: 16px;
-
   padding: 15px 25px;
   color: white;
   font-size: 102px;
   font-weight: 900;
-
   text-align: center;
 }
 
@@ -124,6 +118,13 @@ main {
 }
 
 .tempMax {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.tempMin {
   color: white;
   font-size: 2.3em;
   font-weight: 300;
