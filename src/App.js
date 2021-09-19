@@ -5,8 +5,6 @@ const api = {
   base: 'https://api.openweathermap.org/data/2.5/',
 }
 
-
-
 function App() {
   const [query, setQuery] = useState('')
   const [weather, setWeather] = useState({})
@@ -58,12 +56,12 @@ function App() {
   return (
     <div className="app">
       <main>
-        <h1 className="header">Enter a Location to Find its Weather</h1>
+        <h1 className="header">Get Current Weather</h1>
         <div className="searchBox">
           <input
             type="text"
             className="searchBar"
-            placeholder="Search..."
+            placeholder="Enter city name..."
             onChange={(event) => setQuery(event.target.value)}
             value={query}
             onKeyPress={search}
@@ -77,7 +75,8 @@ function App() {
                 {/* <div className="date">{dateBuilder(new Date())}</div> */}
                 <div className="weatherBox">
                   <div className="weather">
-                   {weather.weather[0].main}
+                    {weather.weather[0].main}
+                    <img src="http://openweathermap.org/img/wn/icon.png" />
                   </div>
                   <div className="temp">{Math.round(weather.main.temp)}°F</div>
                   <br />
@@ -90,6 +89,7 @@ function App() {
                   <div className="tempMin">
                     L: {weather.main.temp_min.toFixed(0)}°
                   </div>
+                  <img />
                 </div>
               </div>
             </div>
