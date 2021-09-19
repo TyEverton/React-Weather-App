@@ -21,20 +21,20 @@ function App() {
   }
 
   const dateBuilder = (d) => {
-    let months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ]
+    // let months = [
+    //   'January',
+    //   'February',
+    //   'March',
+    //   'April',
+    //   'May',
+    //   'June',
+    //   'July',
+    //   'August',
+    //   'September',
+    //   'October',
+    //   'November',
+    //   'December',
+    // ]
     let days = [
       'Sunday',
       'Monday',
@@ -47,10 +47,11 @@ function App() {
 
     let day = days[d.getDay()]
     let date = d.getDate()
-    let month = months[d.getMonth()]
+    // let month = months[d.getMonth()]
     let year = d.getFullYear()
 
-    return `${day} ${date} ${month} ${year}`
+    return `${day} ${date} ${year}`
+    // ${month}
   }
 
   return (
@@ -76,7 +77,7 @@ function App() {
                 <div className="weatherBox">
                   <div className="weather">
                     {weather.weather[0].main}
-                    <img src="http://openweathermap.org/img/wn/icon.png" />
+                    {/* <img src='http://openweathermap.org/img/w/${item.icon}.png' /> */}
                   </div>
                   <div className="temp">{Math.round(weather.main.temp)}°F</div>
                   <br />
