@@ -13,7 +13,6 @@
     "express": "^4.17.1",
     "got": "^8.3.2",
     "heroku": "^7.59.0",
-    "phoenix": "*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
