@@ -68,6 +68,7 @@ function App() {
             onKeyPress={search}
           />
         </div>
+        <button className="submitBtn">Submit</button>
         {typeof weather.main != 'undefined' ? (
           <div className="results">
             <div className="locationBox">

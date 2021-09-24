@@ -47,6 +47,10 @@ main {
   color: black;
 }
 
+.submitBtn {
+  
+}
+
 .searchBox .searchBar {
   display: block;
   width: 100%;
