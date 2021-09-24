@@ -1,6 +1,9 @@
 .header {
   text-align: center;
   color: white;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 2%;
 }
 
 * {
