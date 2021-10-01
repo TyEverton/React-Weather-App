@@ -17,7 +17,9 @@ function App() {
           setWeather(result)
           setQuery('')
         })
+        this.handleClick = this.handleClick.bind(this)
     }
+   
   }
 
   const dateBuilder = (d) => {
@@ -62,7 +64,7 @@ function App() {
           <input
             type="text"
             className="searchBar"
-            placeholder="Enter city name..."
+            placeholder="Enter city name"
             onChange={(event) => setQuery(event.target.value)}
             value={query}
             onKeyPress={search}

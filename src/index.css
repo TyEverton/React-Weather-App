@@ -17,16 +17,16 @@ body {
   background-color: rgb(62, 191, 214);
 }
 
-.app {
+/* .app {
   background-image: url();
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
-}
+} */
 
-.app.warm {
+/* .app.warm {
   background-image: url();
-}
+} */
 
 /* I will need to find images i want to use for the weather images. Hot, cold, rainy, snowy etc for the "app" and "app.warm" classes above */
 
@@ -48,7 +48,15 @@ main {
 }
 
 .submitBtn {
-  
+  position: absolute;
+  left: 65.5%;
+  top: 14.5%;
+  height: 2em;
+  width: 4em;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .searchBox .searchBar {
