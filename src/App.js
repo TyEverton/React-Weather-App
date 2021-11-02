@@ -20,40 +20,6 @@ function App() {
     }
   }
 
-  // const dateBuilder = (d) => {
-  //   // let months = [
-  //   //   'January',
-  //   //   'February',
-  //   //   'March',
-  //   //   'April',
-  //   //   'May',
-  //   //   'June',
-  //   //   'July',
-  //   //   'August',
-  //   //   'September',
-  //   //   'October',
-  //   //   'November',
-  //   //   'December',
-  //   // ]
-  //   let days = [
-  //     'Sunday',
-  //     'Monday',
-  //     'Tuesday',
-  //     'Wednesday',
-  //     'Thursday',
-  //     'Friday',
-  //     'Saturday',
-  //   ]
-
-  //   let day = days[d.getDay()]
-  //   let date = d.getDate()
-  //   // let month = months[d.getMonth()]
-  //   let year = d.getFullYear()
-
-  //   return `${day} ${date} ${year}`
-  //   // ${month}
-  // }
-
   return (
     <div className="app">
       <main>
@@ -73,11 +39,9 @@ function App() {
             <div className="locationBox">
               <div>
                 <div className="location">{weather.name}</div>
-                {/* <div className="date">{dateBuilder(new Date())}</div> */}
                 <div className="weatherBox">
                   <div className="weather">
                     {weather.weather[0].main}
-                    {/* <img src='http://openweathermap.org/img/w/${item.icon}.png' /> */}
                   </div>
                   <div className="temp">{Math.round(weather.main.temp)}°F</div>
                   <br />
