@@ -17,44 +17,42 @@ function App() {
           setWeather(result)
           setQuery('')
         })
-        this.handleClick = this.handleClick.bind(this)
     }
-   
   }
 
-  const dateBuilder = (d) => {
-    // let months = [
-    //   'January',
-    //   'February',
-    //   'March',
-    //   'April',
-    //   'May',
-    //   'June',
-    //   'July',
-    //   'August',
-    //   'September',
-    //   'October',
-    //   'November',
-    //   'December',
-    // ]
-    let days = [
-      'Sunday',
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-    ]
+  // const dateBuilder = (d) => {
+  //   // let months = [
+  //   //   'January',
+  //   //   'February',
+  //   //   'March',
+  //   //   'April',
+  //   //   'May',
+  //   //   'June',
+  //   //   'July',
+  //   //   'August',
+  //   //   'September',
+  //   //   'October',
+  //   //   'November',
+  //   //   'December',
+  //   // ]
+  //   let days = [
+  //     'Sunday',
+  //     'Monday',
+  //     'Tuesday',
+  //     'Wednesday',
+  //     'Thursday',
+  //     'Friday',
+  //     'Saturday',
+  //   ]
 
-    let day = days[d.getDay()]
-    let date = d.getDate()
-    // let month = months[d.getMonth()]
-    let year = d.getFullYear()
+  //   let day = days[d.getDay()]
+  //   let date = d.getDate()
+  //   // let month = months[d.getMonth()]
+  //   let year = d.getFullYear()
 
-    return `${day} ${date} ${year}`
-    // ${month}
-  }
+  //   return `${day} ${date} ${year}`
+  //   // ${month}
+  // }
 
   return (
     <div className="app">
@@ -64,13 +62,12 @@ function App() {
           <input
             type="text"
             className="searchBar"
-            placeholder="Enter city name"
+            placeholder="Enter city name and press enter or return"
             onChange={(event) => setQuery(event.target.value)}
             value={query}
             onKeyPress={search}
           />
         </div>
-        <button className="submitBtn">Submit</button>
         {typeof weather.main != 'undefined' ? (
           <div className="results">
             <div className="locationBox">
